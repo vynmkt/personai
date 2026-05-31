@@ -1,0 +1,11 @@
+{
+  "remoteName": "origin",
+  "projects": [
+    {
+      "id": "prj_Nb46j2EmaI15tBKotBgRFu7rYqLv",
+      "name": "personai",
+      "directory": ".",
+      "orgId": "team_jw86eQtJjNp856f8IGM8yU85"
+    }
+  ]
+}

@@ -8,9 +8,8 @@ export interface AuthRequest extends VercelRequest {
   user?: { id: number; email: string };
 }
 
-export type Handler = (req: AuthRequest, res: VercelResponse) => Promise<void> | void;
+export type Handler = (req: AuthRequest, res: VercelResponse) => Promise<any> | any;
 
-// Wrapper que autentica o token antes de chamar o handler
 export function withAuth(handler: Handler) {
   return async (req: AuthRequest, res: VercelResponse) => {
     const auth = req.headers.authorization;
